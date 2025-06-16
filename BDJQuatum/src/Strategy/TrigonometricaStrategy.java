@@ -4,15 +4,22 @@
  */
 package Strategy;
 
+import org.matheclipse.core.eval.ExprEvaluator;
+
 /**
  *
- * @author LENOVO
+ * @author Suyon Niño Diego Alonso
  */
 public class TrigonometricaStrategy implements OperacionStrategy{
 
     @Override
     public String resolver(String expresion) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        ExprEvaluator evaluator = new ExprEvaluator();
+        try {
+            return evaluator.eval("Sin("+expresion +")").toString();
+        } catch (Exception e) {
+            return "Error al calcular función trigonométrica: " + e.getMessage();
+        }
     }
     
 }

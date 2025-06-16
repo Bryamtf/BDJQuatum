@@ -4,6 +4,7 @@
  */
 package Strategy;
 
+import org.matheclipse.core.eval.ExprEvaluator;
 /**
  *
  * @author LENOVO
@@ -12,7 +13,13 @@ public class DerivadaStrategy implements OperacionStrategy{
 
     @Override
     public String resolver(String expresion) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        ExprEvaluator evaluator = new ExprEvaluator();
+        try {
+            String comando = "D(" + expresion + ", x)";
+            return evaluator.eval(comando).toString();
+        } catch (Exception e) {
+            return "Error al derivar: " + e.getMessage();
+        }
     }
     
 }

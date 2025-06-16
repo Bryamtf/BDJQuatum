@@ -4,12 +4,14 @@
  */
 package PatronesDecreación;
 
+import Modelo.Formula;
+
 /**
  *
  * @author LENOVO
  */
 public class FormulaFactory {
     public Formula CrearFormula (String tipo){
-        return tipo;
+        return null;
     }
 }

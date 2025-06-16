@@ -10,19 +10,15 @@ package Strategy;
  */
 public class OperacionContexto {
     private OperacionStrategy estrategia;
-
-    public OperacionContexto() {
-    }
     
-    public OperacionContexto(OperacionStrategy estrategia) {
-        this.estrategia = estrategia;
-    }
-
     public void setEstrategia(OperacionStrategy estrategia) {
         this.estrategia = estrategia;
     }
     
-    public String resolver(String expresion ){
-        return expresion;
+    public String resolver(String expresion) {
+        if (estrategia == null) {
+            throw new IllegalStateException("No se ha definido una estrategia de operación.");
+        }
+        return estrategia.resolver(expresion);
     }
 }

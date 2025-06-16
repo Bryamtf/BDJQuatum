@@ -4,6 +4,11 @@
  */
 package bdjquatum;
 
+import Strategy.DerivadaStrategy;
+import Strategy.OperacionContexto;
+import Strategy.SumaStrategy;
+import Strategy.TrigonometricaStrategy;
+
 /**
  *
  * @author HP
@@ -14,7 +19,11 @@ public class BDJQuatum {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        OperacionContexto contexto = new OperacionContexto();
+        contexto.setEstrategia(new TrigonometricaStrategy());
+
+        String resultado = contexto.resolver("90");
+        System.out.println("Resultado: " + resultado);
     }
     
 }

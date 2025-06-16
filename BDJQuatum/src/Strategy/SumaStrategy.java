@@ -4,15 +4,21 @@
  */
 package Strategy;
 
+import org.matheclipse.core.eval.ExprEvaluator;
 /**
  *
- * @author LENOVO
+ * @author Suyon Niño Diego Alonso version 1
  */
 public class SumaStrategy implements OperacionStrategy {
 
     @Override
     public String resolver(String expresion) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        ExprEvaluator evaluator = new ExprEvaluator();
+        try {
+            return evaluator.eval(expresion).toString();
+        } catch (Exception e) {
+            return "Error al evaluar la suma: " + e.getMessage();
+        }
     }
     
 }
