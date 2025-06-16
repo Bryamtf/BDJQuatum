@@ -1,0 +1,17 @@
+DROP DATABASE  DBJCQUATUM;
+CREATE DATABASE DBJCQUATUM;
+USE DBJCQUATUM;
+CREATE TABLE usuario(
+id_usuario INT NOT NULL AUTO_INCREMENT, 
+nombreUsuario VARCHAR(50) NOT NULL,
+clave VARCHAR(200) NOT NULL,
+PRIMARY KEY (id_usuario)
+) ENGINE=InnoDB;
+
+CREATE TABLE formula(
+id_formula INT NOT NULL AUTO_INCREMENT,
+expresion_matematica VARCHAR(200) NOT NULL,
+id_usuario INT NOT NULL,
+PRIMARY KEY(id_formula),
+FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+) ENGINE= InnoDB;
