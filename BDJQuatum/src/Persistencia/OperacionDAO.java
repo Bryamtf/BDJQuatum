@@ -5,6 +5,8 @@
 package Persistencia;
 
 import Modelo.Operacion;
+
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,8 +16,9 @@ import java.util.List;
  * Versión: 1.0
  */
 public class OperacionDAO {
-   
+    private Connection  conexion;
     public void Guardar(Operacion operacion){
+
         System.out.println("Haciendo la guardacion");
     }
     public List<Operacion> listar(){

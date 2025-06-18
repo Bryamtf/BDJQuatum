@@ -12,13 +12,11 @@ import Strategy.TrigonometricaStrategy;
 
 /**
  *
- * @author HP
+ * @author BRYAM TERRONES
+ * Version 1.0
  */
 public class BDJQuatum {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         OperacionContexto contexto = new OperacionContexto();
 

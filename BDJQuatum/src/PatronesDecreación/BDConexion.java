@@ -13,9 +13,9 @@ import java.sql.SQLException;
  */
 public class BDConexion {
     
-    private static final String URL = "jdbc:mysql://localhost:3306/proyecto_algoritmo";
+    private static final String URL = "jdbc:mysql://localhost:3306/DBJCQUATUM";
     private static final String USER = "root";
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "admin";
     
     private static BDConexion instancia;
     private Connection conexion;
