@@ -21,7 +21,12 @@ public class TrigonometricaStrategy implements OperacionStrategy{
     public String resolver(String expresion) {
         ExprEvaluator evaluator = new ExprEvaluator();
         try {
-            String comando = funcion +"("+expresion+")";  //Degree * 
+            String comando;
+            if(expresion.contains("Pi")){
+                comando = funcion +"("+expresion+")";
+            }else{
+                comando = funcion +"(Degree * "+expresion+")";
+            }
             return evaluator.eval("N("+comando+")").toString();
         } catch (Exception e) {
             return "Error al calcular función trigonométrica: " + e.getMessage();
