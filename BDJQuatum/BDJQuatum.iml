@@ -7,5 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mysql-connector" level="project" />
+    <orderEntry type="library" name="animated-gif-lib-1.4" level="project" />
+    <orderEntry type="library" name="annotations-23.0.0" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
