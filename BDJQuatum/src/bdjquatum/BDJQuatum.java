@@ -5,6 +5,7 @@
 package bdjquatum;
 
 import Strategy.DerivadaStrategy;
+import Strategy.LogaritmoStrategy;
 import Strategy.OperacionContexto;
 import Strategy.SumaStrategy;
 import Strategy.TrigonometricaStrategy;
@@ -20,10 +21,10 @@ public class BDJQuatum {
      */
     public static void main(String[] args) {
         OperacionContexto contexto = new OperacionContexto();
-        contexto.setEstrategia(new TrigonometricaStrategy());
 
-        String resultado = contexto.resolver("90");
-        System.out.println("Resultado: " + resultado);
+        contexto.setEstrategia(new TrigonometricaStrategy("Sin"));
+        System.out.println(contexto.resolver("Pi/2")); // 1
+
     }
     
 }

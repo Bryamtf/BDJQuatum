@@ -14,7 +14,7 @@ public class LogaritmoStrategy implements OperacionStrategy{
     public String resolver(String expresion) {
         ExprEvaluator evaluator = new ExprEvaluator();
         try {
-            String comando = "Log("+expresion+")";
+            String comando = "Log["+expresion+"]";
             return evaluator.eval(comando).toString();
         } catch (Exception e) {
             return "Error al calcular el logaritmo: " + e.getMessage();
