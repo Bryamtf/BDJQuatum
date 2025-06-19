@@ -9,10 +9,17 @@
             <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/SumaStrategy.java</file>
             <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/DerivadaStrategy.java</file>
             <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/OperacionContexto.java</file>
-            <file>file:/C:/BDJQuatum/BDJQuatum/src/PatronesDecreación/FormulaFactory.java</file>
-            <file>file:/C:/BDJQuatum/BDJQuatum/src/PatronesDecreación/BDConexion.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/TaylorFormula.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Singleton/BDConexion.java</file>
             <file>file:/C:/BDJQuatum/BDJQuatum/src/Controlador/Calculadora.java</file>
             <file>file:/C:/BDJQuatum/BDJQuatum/src/bdjquatum/BDJQuatum.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Persistencia/FormulaDAO.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Modelo/Formula.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/PitagorasFormula.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/FormulaCreator.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/PitagorasFormulaCreator.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Singleton/PruebaConexion.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/FormulaAccion.java</file>
         </group>
     </open-files>
 </project-private>
