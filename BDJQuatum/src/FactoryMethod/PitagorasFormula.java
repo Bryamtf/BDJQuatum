@@ -20,5 +20,11 @@ public class PitagorasFormula implements FormulaAccion{
     public String getNombre() {
         return "Teorema de Pitágoras";
     }
+
+    @Override
+    public String toString() {
+        return getNombre();
+    }
+    
     
 }

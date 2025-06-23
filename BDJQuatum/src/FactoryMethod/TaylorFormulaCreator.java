@@ -8,12 +8,15 @@ package FactoryMethod;
  *
  * @author LENOVO
  */
-public interface FormulaAccion {
-    String getNombre();
-    String getExpresion();
+public class TaylorFormulaCreator implements FormulaCreator {
 
-    @Override
-    public String toString();
+    static {
+        FormulaRegistry.registrar("Taylor", new TaylorFormulaCreator());
+    }
     
+    @Override
+    public FormulaAccion crearFormula() {
+        return new TaylorFormula();
+    }
     
 }

@@ -2,6 +2,38 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+<<<<<<< HEAD
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Controlador/Calculadora.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/TaylorFormulaCreator.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/FormulaRegistry.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/TaylorFormula.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/PitagorasFormula.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/FormulaAccion.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/PitagorasFormulaCreator.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Vista/GUI.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/SumaStrategy.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/PatronesDecreación/BDConexion.java</file>
+=======
+>>>>>>> ac7818647d55ff47fb21847f10e5d030d755a09d
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/OperacionStrategy.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/TrigonometricaStrategy.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/FormulaCreator.java</file>
+<<<<<<< HEAD
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/EvaluadorGeneralStrategy.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Strategy/OperacionContexto.java</file>
+=======
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/PitagorasFormulaCreator.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/Singleton/PruebaConexion.java</file>
+            <file>file:/C:/BDJQuatum/BDJQuatum/src/FactoryMethod/FormulaAccion.java</file>
+>>>>>>> 959ef71eef7e53318f9d70bea9ae2e7c57ef3034
+>>>>>>> ac7818647d55ff47fb21847f10e5d030d755a09d
+        </group>
+>>>>>>> 1211dd2ea1c7e9759186b1caadbd2ea0c979d172
     </open-files>
 </project-private>
