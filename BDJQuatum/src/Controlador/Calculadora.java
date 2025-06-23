@@ -4,6 +4,10 @@
  */
 package Controlador;
 
+import FactoryMethod.FormulaAccion;
+import FactoryMethod.FormulaCreator;
+import FactoryMethod.FormulaRegistry;
+import Modelo.Formula;
 import Strategy.OperacionContexto;
 
 /**
@@ -14,12 +18,27 @@ import Strategy.OperacionContexto;
 public class Calculadora {
     private OperacionContexto contexto;
     
-    public void calular(String exp){
-        System.out.println("Calculando");
+    public String calular(String exp){
+         if(contexto == null){
+             throw new IllegalStateException("No se configuró ninguna operación");
+         }
+         return contexto.resolver(exp);
     }
     
     public void cargarFormula(int id){
         System.out.println("Cargando formula" + id);
+    }
+    
+    public FormulaAccion obtenerFormula(String tipo) {
+        FormulaCreator creador = FormulaRegistry.obtenerCreador(tipo);
+        if (creador != null) {
+            return creador.crearFormula();
+        }
+        return null;
+    }
+
+    public String[] listarFormulasDisponibles() {
+        return FormulaRegistry.listarFormulas();
     }
     
     public void guardarOperacion(){

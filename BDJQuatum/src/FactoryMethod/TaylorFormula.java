@@ -20,4 +20,9 @@ public class TaylorFormula implements FormulaAccion {
     public String getExpresion() {
         return "f(x) ≈ f(a) + f'(a)(x - a) + f''(a)(x - a)^2 / 2!";
     }
+
+    @Override
+    public String toString() {
+        return getNombre();
+    }
 }
