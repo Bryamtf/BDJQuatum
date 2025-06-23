@@ -96,12 +96,22 @@ public class GUI extends javax.swing.JFrame {
 
         TxtNum1.setBorder(null);
         TxtNum1.setMargin(new java.awt.Insets(10, 10, 10, 10));
+        TxtNum1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtNum1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(TxtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 450, 32));
 
         TxtNum2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         TxtNum2.setText("0");
         TxtNum2.setBorder(null);
         TxtNum2.setMargin(new java.awt.Insets(10, 10, 10, 10));
+        TxtNum2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtNum2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(TxtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 450, 30));
 
         RadioButtonRadianes.setText("Sexagesimales");
@@ -771,7 +781,8 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnXalCuboActionPerformed
 
     private void BtnNum4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNum4ActionPerformed
-        // TODO add your handling code here:
+        String numero = BtnNum4.getText();
+        System.out.println(numero);        // TODO add your handling code here:
     }//GEN-LAST:event_BtnNum4ActionPerformed
 
     private void BtnNum5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNum5ActionPerformed
@@ -845,6 +856,14 @@ public class GUI extends javax.swing.JFrame {
     private void BtnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIgualActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BtnIgualActionPerformed
+
+    private void TxtNum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNum1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtNum1ActionPerformed
+
+    private void TxtNum2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNum2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtNum2ActionPerformed
 
     /**
      * @param args the command line arguments
